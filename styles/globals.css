@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  @apply font-inter bg-gray-100;
+}
+
+nav ul li {
+  @apply transition-all duration-300;
+}
+
+nav ul li:hover {
+  @apply text-yellow-500 transform scale-110;
+}
+
+header {
+  @apply mb-8;
+}
+
+h2 {
+  @apply mt-8 mb-4;
+}
+
+h3 {
+  @apply mt-4 mb-2;
+}
+
+footer {
+  @apply mt-8 text-center;
+}
+
+.image-hover-effect {
+  @apply transition-transform duration-300;
+}
+
+.image-hover-effect:hover {
+  @apply transform scale-105;
+}
+
+html {
+  scroll-behavior: smooth;
+  @apply font-raleway;
+}
+
+.custom-img {
+  background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80');
+}
